@@ -1,0 +1,8 @@
+STOCK : Id, Id_Ouvrage, Etat, Status , Id OUVRAGE
+OUVRAGE : Id, ISBN, Titre, Auteur
+
+comprend : Id STOCK, Id EMPRUNTEMPRUNT : Id, Id_Stock, Id_Client, DateOUT, DateIN , Id client
+CLIENT : Id, Nom, Prenom, Role, NumTel, Email, Adresse
+
+passe : Id CLIENT, Id COMMANDE
+COMMANDE : Id, Id_client, Prix, Reference, DateCom
